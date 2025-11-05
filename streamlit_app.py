@@ -1,13 +1,4 @@
-'''
-    App streamlit de formulário para agariar as opniões do estudantes
-    
-    ---Objetivo:
-        -Criar um formulário dinâmico e de fácil acesso para os alunos
-        -Enteder as necessidades para desenvolver de forma rápida e coesa
-                    
-        *Solução:
-            Criar um formulário no streamlit com API da googlesheets.
-'''
+
 # importando bibliotecas
 
 import pandas as pd 
@@ -119,5 +110,6 @@ if curso and len(q4) > 0:
             #Escrevendo no formulário
             conn.update(worksheet='AVA', data=updated_ava)
             conn.update(worksheet='Disciplina', data=updated_disciplina)
+
 
             st.success('Formulário enviado com sucesso!')
