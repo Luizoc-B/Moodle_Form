@@ -1,1 +1,1 @@
-!pip install streamlit-gsheets
+pip install streamlit-gsheets
